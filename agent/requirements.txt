@@ -1,0 +1,3 @@
+uvicorn
+pydantic-ai-slim[ag-ui]
+python-dotenv
