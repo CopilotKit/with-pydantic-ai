@@ -10,7 +10,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "install:agent": "cd agent && pip install -r requirements.txt"
+    "install:agent": "./scripts/setup-agent.sh"
   },
   "dependencies": {
     "@ag-ui/client": "^0.0.35",
