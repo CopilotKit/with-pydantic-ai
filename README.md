@@ -47,6 +47,14 @@ yarn install:agent
 bun run install:agent
 ```
 
+> **Note:** This will automatically setup a `.venv` (virtual environment) inside the `agent` directory.  
+>
+> To activate the virtual environment manually, you can run:
+> ```bash
+> source agent/.venv/bin/activate
+> ```
+
+
 3. Set up your OpenAI API key:
 ```bash
 export OPENAI_API_KEY="your-openai-api-key-here"

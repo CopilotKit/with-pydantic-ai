@@ -13,5 +13,3 @@ source .venv/bin/activate
 
 # Install requirements using pip3 or pip
 (pip3 install -r requirements.txt || pip install -r requirements.txt)
-
-echo "Agent environment setup complete."
