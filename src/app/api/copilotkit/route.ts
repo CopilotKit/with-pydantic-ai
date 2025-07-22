@@ -10,7 +10,7 @@ import { NextRequest } from "next/server";
 //    the empty adapter since we're only using one agent.
 const serviceAdapter = new ExperimentalEmptyAdapter();
  
-// 2. Create the CopilotRuntime instance and utilize the PydanticAI AG-UI
+// 2. Create the CopilotRuntime instance and utilize the Pydantic AI AG-UI
 //    integration to setup the connection.
 const runtime = new CopilotRuntime({
   agents: {

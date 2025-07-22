@@ -1,12 +1,12 @@
-# CopilotKit <> PydanticAI Starter
+# CopilotKit <> Pydantic AI Starter
 
-This is a starter template for building AI agents using [PydanticAI](https://ai.pydantic.dev/) and [CopilotKit](https://copilotkit.ai). It provides a modern Next.js application with an integrated investment analyst agent that can research stocks, analyze market data, and provide investment insights.
+This is a starter template for building AI agents using [Pydantic AI](https://ai.pydantic.dev/) and [CopilotKit](https://copilotkit.ai). It provides a modern Next.js application with an integrated investment analyst agent that can research stocks, analyze market data, and provide investment insights.
 
 ## Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - Python 3.8+
-- OpenAI API Key (for the PydanticAI agent)
+- OpenAI API Key (for the Pydantic AI agent)
 - Any of the following package managers:
   - pnpm (recommended)
   - npm
@@ -32,7 +32,7 @@ yarn install
 bun install
 ```
 
-2. Install Python dependencies for the PydanticAI agent:
+2. Install Python dependencies for the Pydantic AI agent:
 ```bash
 # Using pnpm
 pnpm install:agent
@@ -47,7 +47,7 @@ yarn install:agent
 bun run install:agent
 ```
 
-> **Note:** This will automatically setup a `.venv` (virtual environment) inside the `agent` directory.  
+> **Note:** This will automatically setup a `.venv` (virtual environment) inside the `agent` directory.
 >
 > To activate the virtual environment manually, you can run:
 > ```bash
@@ -82,7 +82,7 @@ The following scripts can also be run using your preferred package manager:
 - `dev` - Starts both UI and agent servers in development mode
 - `dev:debug` - Starts development servers with debug logging enabled
 - `dev:ui` - Starts only the Next.js UI server
-- `dev:agent` - Starts only the PydanticAI agent server
+- `dev:agent` - Starts only the Pydantic AI agent server
 - `build` - Builds the Next.js application for production
 - `start` - Starts the production server
 - `lint` - Runs ESLint for code linting
@@ -97,7 +97,7 @@ The main UI component is in `src/app/page.tsx`. You can:
 
 ## 📚 Documentation
 
-- [PydanticAI Documentation](https://ai.pydantic.dev) - Learn more about PydanticAI and its features
+- [Pydantic AI Documentation](https://ai.pydantic.dev) - Learn more about Pydantic AI and its features
 - [CopilotKit Documentation](https://docs.copilotkit.ai) - Explore CopilotKit's capabilities
 - [Next.js Documentation](https://nextjs.org/docs) - Learn about Next.js features and API
 
@@ -114,7 +114,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ### Agent Connection Issues
 If you see "I'm having trouble connecting to my tools", make sure:
-1. The PydanticAI agent is running on port 8000
+1. The Pydantic AI agent is running on port 8000
 2. Your OpenAI API key is set correctly
 3. Both servers started successfully
 
