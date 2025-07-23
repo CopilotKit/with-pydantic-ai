@@ -32,8 +32,7 @@ async def add_proverbs(ctx: RunContext[StateDeps[ProverbsState]], proverbs: list
         snapshot=ctx.deps.state,
     )
 
-# @agent.tool
-# async def display_proverbs(ctx: RunContext[StateDeps[ProverbsState]]) -> StateSnapshotEvent:
+
 @agent.tool_plain
 async def display_proverbs(proverbs: list[str]) -> StateSnapshotEvent:
     """Display the proverbs to the user.
@@ -53,14 +52,10 @@ async def display_proverbs(proverbs: list[str]) -> StateSnapshotEvent:
 
 
 # @agent.tool
-# # async def display_proverbs(ctx: RunContext[StateDeps[ProverbsState]]) -> StateSnapshotEvent:
-# @agent.tool_plain
-# async def display_proverbs(proverbs: list[str]) -> StateSnapshotEvent:
+# async def display_proverbs(ctx: RunContext[StateDeps[ProverbsState]]) -> StateSnapshotEvent:
 #     """Display the proverbs to the user.
-
 #     Args:
-#         proverbs: The list of proverbs to display.
-
+#         ctx: The run context containing proverbs state information.
 #     Returns:
 #         StateSnapshotEvent containing the proverbs snapshot.
 #     """
@@ -105,7 +100,7 @@ async def proverbs_instructions(ctx: RunContext[StateDeps[ProverbsState]]) -> st
         - Only add proverbs when the user explicitly asks for them.
         - Do NOT repeat the proverbs in the message, use the tool instead
         - If the user does not provide any proverbs when asking you to add to the list, make one up at random
-        - Always finish any request by using the `display_proverbs` tool
+        - If you have modified the proverbs, use the `display_proverbs` tool
         - Do NOT run the `display_proverbs` tool multiple times in a row
 
         Once you have completed the user's request, summarise what you did in one sentence.
